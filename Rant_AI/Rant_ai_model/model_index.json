@@ -1,0 +1,5 @@
+{
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "library_name": "peft",
+  "adapter_type": "lora"
+}
