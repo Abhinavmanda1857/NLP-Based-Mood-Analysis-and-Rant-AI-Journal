@@ -21,31 +21,7 @@
 
 ---
 
-## 📂 Project Structure
 
-```
-nlp-mood-rantai/
-├── backend/
-│   ├── app.py                # Flask backend for model inference
-│   ├── model/                # Base + LoRA fine-tuned TinyLLaMA
-│   └── requirements.txt
-├── frontend/
-│   ├── index.html            # Rant interface
-│   ├── style.css
-│   └── script.js
-├── database/
-│   ├── schema.sql
-│   └── connector.py          # PostgreSQL interface
-├── mood-analysis/
-│   └── mood_model.py         # BERT classifier (optional)
-├── training/
-│   ├── preprocess.py
-│   └── finetune_rantai.ipynb
-├── README.md
-└── .gitignore
-```
-
----
 
 ## 🛠️ Installation & Running
 
@@ -73,21 +49,6 @@ python app.py
 
 Navigate to `frontend/index.html` in your browser.
 
-### 5. (Optional) Setup PostgreSQL
-
-```sql
-CREATE TABLE journal_entries (
-    id SERIAL PRIMARY KEY,
-    prompt TEXT,
-    response TEXT,
-    mood_label TEXT,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-Update `connector.py` with your DB credentials.
-
----
 
 ## 🧠 Model Details
 
@@ -140,13 +101,3 @@ Assistant: I'm really sorry you're going through this. Take one step at a time�
 - BERT & Scikit-Learn for Mood Classification
 
 ---
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 👤 Author
-
-- **[Your Name]** – NLP Engineer, Mental Health Advocate
