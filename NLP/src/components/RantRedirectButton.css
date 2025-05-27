@@ -1,0 +1,38 @@
+.rant-button-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.rant-svg {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.rant-center-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 28px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.rant-button-wrapper:hover .rant-center-icon {
+  background-color: #ff3b3b;
+  transform: scale(1.1);
+}
